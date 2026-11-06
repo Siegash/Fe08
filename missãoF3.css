@@ -1,0 +1,11 @@
+.lista {
+  display: flex;
+  flex-wrap: wrap;   
+}
+
+.cartao {
+  flex: 1 1 220px;  
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}

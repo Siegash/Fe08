@@ -1,0 +1,56 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.pagina {
+    display: grid;
+    grid-template-areas:
+        "cab cab cab"
+        "menu main lado"
+        "pe pe pe";
+
+    grid-template-columns: 200px 1fr 200px;
+    gap: 10px;
+}
+
+header {
+    grid-area: cab;
+    background-color: rgb(91, 91, 190);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+nav {
+    grid-area: menu;
+    background-color: green;
+    padding: 30px;
+}
+
+main {
+    grid-area: main;
+    background-color: rgb(207, 96, 152);
+    padding: 30px;
+}
+
+aside {
+    grid-area: lado;
+    background-color: rgb(133, 81, 146);
+    padding: 30px;
+}
+
+footer {
+    grid-area: pe;
+    background-color: purple;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}

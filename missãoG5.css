@@ -1,0 +1,60 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    padding: 20px;
+}
+
+.pagina {
+    display: grid;
+
+    grid-template-areas:
+        "cab cab cab"
+        "menu main lado"
+        "pe pe pe";
+
+    grid-template-columns: 200px 1fr 200px;
+
+    gap: 10px;
+    min-height: 500px;
+}
+
+header {
+    grid-area: cab;
+    background-color: #3498db;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+nav {
+    grid-area: menu;
+    background-color: #2ecc71;
+    padding: 20px;
+}
+
+main {
+    grid-area: main;
+    background-color: #f1c40f;
+    padding: 20px;
+}
+
+aside {
+    grid-area: lado;
+    background-color: #e67e22;
+    padding: 20px;
+}
+
+footer {
+    grid-area: pe;
+    background-color: #9b59b6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
